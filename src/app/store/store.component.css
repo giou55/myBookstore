@@ -1,0 +1,38 @@
+.bg-maroon {
+    background-color: #681716;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+    cursor:pointer;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #aaa;
+}
+#pageBtn button {
+    border: 1px solid #681716;
+    color:#333;
+    box-shadow: none;
+}
+#pageBtn button.active {
+    background-color: #681716;
+    color:#fff;
+}
+#books img {
+    width: 100%;
+    height: auto;
+}
+#books h4 {
+    font-size: 18px;
+}
+.btn {
+    white-space: pre-wrap;
+}
+#sidebar img {
+    width: 70%;
+    margin-top: 1.8rem;
+}

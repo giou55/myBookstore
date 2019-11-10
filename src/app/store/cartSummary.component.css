@@ -1,0 +1,13 @@
+#myCart {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+#myCart > div {
+    margin-right: 10px;
+}
+#cartText {
+    line-height: 1.4; 
+    font-size: 0.8rem;
+}
+

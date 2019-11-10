@@ -1,0 +1,27 @@
+<div id="myCart">
+
+  <div>
+      <button class="btn btn-lg bg-dark text-white"
+          [disabled]="cart.itemCount == 0" routerLink="/cart">
+        <i style="font-size: 2rem;" class="fa fa-shopping-cart"></i>
+      </button>
+  </div>
+
+  <div id="cartText">
+      Το καλάθι σας:<br>
+      <span *ngIf="cart.itemCount > 1">
+          {{ cart.itemCount }} αντικείμενα
+          {{ cart.cartPrice | currency:"USD":"symbol":"2.2-2" }}
+      </span>
+      <span *ngIf="cart.itemCount == 1">
+          {{ cart.itemCount }} αντικείμενο
+          {{ cart.cartPrice | currency:"USD":"symbol":"2.2-2" }}
+      </span>
+      <span style="text-align: center;" *ngIf="cart.itemCount == 0">
+          (άδειο)
+      </span>
+  </div>
+
+</div>
+
+  

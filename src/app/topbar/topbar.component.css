@@ -1,0 +1,133 @@
+#topbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff; 
+    color: #333;
+    text-align: center;
+}
+.logo {
+    width: 70%;
+    margin: 10px;
+}
+#support {
+    display: none;
+}
+a {
+    color:#333;
+}
+a:hover {
+    text-decoration: none;
+    color:#999;
+}
+#search {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search input[type=text] {
+    padding: 7px;
+    font-size: 15px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+#search button {
+    float: left;
+    width: 20%;
+    padding: 7px;
+    background: #681716;
+    color: white;
+    font-size: 15px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+#search button:hover {
+    background: #0b7dda;
+}
+/* Clear floats */
+#search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#headphones{
+    display: inline-block;
+    font-size: 1.8rem;
+}
+#support-text{
+    text-align: center;
+    margin-left: 6px;
+    font-size: 0.9rem;
+}
+#login {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+#cart{
+    padding-top: 10px;
+}
+
+@media only screen and (min-width: 576px) {
+    .logo {
+        width: 60%;
+    }
+    #search input[type=text] {
+        width: 60%;
+    }
+    #search button {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #topbar {
+        text-align: left;
+    }
+    .logo {
+        width: 70%;
+    }
+    #search input[type=text] {
+        width: 80%;
+    }
+    #search button {
+        width: 20%;
+    }
+    .navbar-expand-md .navbar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: .7rem;
+        padding-left: .7rem;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .logo {
+        width: 60%;
+    }
+    #search input[type=text] {
+        width: 70%;
+    }
+    #search button {
+        width: 15%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #topbar {
+        text-align: left;
+    }
+    #support {
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .logo {
+        width: 80%;
+    }
+}
