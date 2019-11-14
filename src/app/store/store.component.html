@@ -26,6 +26,34 @@
         </div>
     </div>
 
+
+    <!-- <mat-sidenav-container>
+        <mat-sidenav #sidenav role="navigation">
+            <mat-nav-list>
+                <a *ngFor="let cat of categories" mat-list-item (click)="onSidenavClose()">
+                  <span class="nav-caption">{{ cat }}</span>
+                </a>
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <mat-toolbar color="primary">
+                <div fxHide.gt-xs>
+                    <button mat-icon-button (click)="onToggleSidenav()">
+                        <mat-icon>menu</mat-icon>
+                    </button>
+                </div>
+                <div fxFlex fxLayout fxLayoutAlign="center" fxHide.xs>
+                    <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+                        <li *ngFor="let cat of categories">
+                            <a>{{ cat }}</a>
+                        </li>
+                    </ul>
+                </div>
+            </mat-toolbar>
+        </mat-sidenav-content>
+    </mat-sidenav-container> -->
+
+
     <div class="row">
         <div class="col-12 col-md-9 col-lg-9 col-xl-9" id="books">
 

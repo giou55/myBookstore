@@ -2,6 +2,23 @@
     background-color: #681716;
 }
 
+
+.nav-caption{
+    display: inline-block;
+    padding-left: 6px;
+}
+.navigation-items{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+mat-sidenav {
+    width: 250px;
+    height: 80vh;
+}
+
+
+
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255,255,255,1);
     cursor:pointer;
