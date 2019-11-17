@@ -29,10 +29,10 @@ a:hover {
 #search input[type=text] {
     padding: 7px;
     font-size: 15px;
-    border: 1px solid grey;
+    border: 1px solid #681716;
     float: left;
     width: 60%;
-    background: #f9f1b7;
+    background: #fff;
 }
 #search button {
     float: left;
