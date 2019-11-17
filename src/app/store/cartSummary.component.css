@@ -1,7 +1,7 @@
 #myCart {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-end;
+    justify-content: center;
 }
 #myCart > div {
     margin-right: 10px;
@@ -10,4 +10,15 @@
     line-height: 1.4; 
     font-size: 0.8rem;
 }
+.btn {
+    padding: 0.4rem 1.2rem;
+}
+.btn.disabled, .btn:disabled {
+    opacity: .5;
+}
 
+@media only screen and (min-width: 992px) {
+    #myCart {
+        justify-content: flex-end;
+    }
+}

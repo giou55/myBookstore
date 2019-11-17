@@ -50,4 +50,10 @@ export class StoreComponent {
         this.cart.addLine(product);
         this.router.navigateByUrl("/cart");
     }
+
+    navbarOpen = false;
+
+    toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
 }

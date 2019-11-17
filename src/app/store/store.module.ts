@@ -11,24 +11,11 @@ import { CartDetailComponent } from "./cartDetail.component";
 import { CheckoutComponent } from "./checkout.component";
 import { RouterModule } from "@angular/router";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatSidenavModule, MatToolbarModule, MatIconModule, MatButtonModule, MatListModule, MatMenuModule } from '@angular/material';
 
 @NgModule({
-    imports: [ModelModule, CommonModule, BrowserModule, FormsModule, RouterModule, BrowserAnimationsModule, FlexLayoutModule,
-        MatMenuModule,
-        MatListModule,
-        MatButtonModule,
-        MatIconModule,
-        MatToolbarModule,
-        MatSidenavModule],
+    imports: [ModelModule, CommonModule, BrowserModule, FormsModule, RouterModule, BrowserAnimationsModule],
     declarations: [StoreComponent, CounterDirective, TopbarComponent, CartSummaryComponent,
         CartDetailComponent, CheckoutComponent],
-    exports: [StoreComponent, CartDetailComponent, CheckoutComponent,MatMenuModule,
-        MatListModule,
-        MatButtonModule,
-        MatIconModule,
-        MatToolbarModule,
-        MatSidenavModule]
+    exports: [StoreComponent, CartDetailComponent, CheckoutComponent]
 })
 export class StoreModule { }
