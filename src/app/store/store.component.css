@@ -25,6 +25,10 @@
     background-color: #fff;
     color: #681716;
 }
+.bookstore {
+    width: 100%;
+    margin-top: 20px;
+}
 #pageBtn button {
     border: 1px solid #681716;
     color:#333;

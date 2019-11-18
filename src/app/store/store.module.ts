@@ -9,13 +9,14 @@ import { TopbarComponent } from "../topbar/topbar.component";
 import { CartSummaryComponent } from "./cartSummary.component";
 import { CartDetailComponent } from "./cartDetail.component";
 import { CheckoutComponent } from "./checkout.component";
+import { FooterComponent } from '../footer/footer.component';
 import { RouterModule } from "@angular/router";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     imports: [ModelModule, CommonModule, BrowserModule, FormsModule, RouterModule, BrowserAnimationsModule],
     declarations: [StoreComponent, CounterDirective, TopbarComponent, CartSummaryComponent,
-        CartDetailComponent, CheckoutComponent],
+        CartDetailComponent, CheckoutComponent, FooterComponent],
     exports: [StoreComponent, CartDetailComponent, CheckoutComponent]
 })
 export class StoreModule { }

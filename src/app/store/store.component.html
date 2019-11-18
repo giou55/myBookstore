@@ -22,7 +22,18 @@
         </div>
     </nav>
 
-    <div class="row">
+    <div *ngIf="selectedCategory == null">
+        <div class="row">
+            <div class="col-12">
+                <img src="../../assets/home/bookstore.jpg" alt="" class="bookstore">
+            </div>
+            <div class="col-12">
+                    <img src="../../assets/home/bookstore2.jpg" alt="" class="bookstore">
+                </div>
+        </div>
+    </div>
+    
+    <div class="row" *ngIf="selectedCategory != null">
         <div class="col-12 col-md-9 col-lg-9 col-xl-9" id="books">
 
             <div class="row">
@@ -87,5 +98,7 @@
         </div>
 
     </div>
+
+    <app-footer></app-footer>
 
 </div>
