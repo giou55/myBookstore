@@ -11,8 +11,10 @@ import { Router } from "@angular/router";
 })
 export class StoreComponent {
     public selectedCategory = null;
+    public selectedHome = true;
     public productsPerPage = 8;
     public selectedPage = 1;
+    public searchResults = null;
 
     constructor(private repository: ProductRepository,
         private cart: Cart,
@@ -28,8 +30,16 @@ export class StoreComponent {
         return this.repository.getCategories();
     }
 
-    changeCategory(newCategory?: string) {
+    showCategory(newCategory: string) {
         this.selectedCategory = newCategory;
+        this.selectedHome = false;
+        this.searchResults = null;
+    }
+
+    showHome() {
+        this.selectedCategory = null;
+        this.selectedHome = true;
+        this.searchResults = null;
     }
 
     changePage(newPage: number) {
@@ -54,6 +64,13 @@ export class StoreComponent {
     navbarOpen = false;
 
     toggleNavbar() {
-    this.navbarOpen = !this.navbarOpen;
-  }
+        this.navbarOpen = !this.navbarOpen;
+    }
+
+    displayResults(results:string) {
+        this.selectedCategory = null;
+        this.selectedHome = false;
+        this.searchResults = results;
+    }
+
 }
