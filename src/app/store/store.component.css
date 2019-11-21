@@ -39,10 +39,11 @@
     background-color: #681716;
     color:#fff;
 }
-#books img {
-    height: 300px;
+.books img {
+    max-width: 100%;
+    max-height: 300px;
 }
-#books h4 {
+.books h4 {
     font-size: 18px;
 }
 .btn {

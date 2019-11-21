@@ -25,9 +25,23 @@
     <div *ngIf="searchResults != null">
         <div class="row">
             <div class="col-12">
-                <p>Βρέθηκαν 18 αποτελέσματα:</p>
-                <p>{{ searchResults }}</p>
-
+                <p>Βρέθηκαν {{ searchResults.length }} αποτελέσματα: </p>
+                <div class="row">
+                    <div *ngFor="let product of searchResults" class="col-6 col-md-4 col-lg-3 col-xl-3 books"
+                        style="padding: 0.8rem;">
+                        <img src="{{ product.imagePath }}" alt="image">
+                        <h4>{{product.name}}</h4>
+                        <div>{{product.author}}</div>
+                        <div class="badge badge-pill badge-primary">
+                            {{ product.price | currency:"USD":"symbol":"2.2-2" }}
+                        </div>
+                        <div class="card-text bg-white p-1">
+                            <button class="btn btn-success btn-sm" (click)="addProductToCart(product)">
+                                Προσθήκη στο καλάθι
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -44,7 +58,7 @@
     </div>
     
     <div class="row" *ngIf="selectedCategory != null">
-        <div class="col-12 col-md-9 col-lg-9 col-xl-9" id="books">
+        <div class="col-12 col-md-9 col-lg-9 col-xl-9">
 
             <div class="row">
                 <div class="col-12" style="margin:1rem auto;">
@@ -70,7 +84,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="row">
-                        <div *ngFor="let product of products" class="col-12 col-md-4 col-lg-3 col-xl-3"
+                        <div *ngFor="let product of products" class="col-6 col-md-4 col-lg-3 col-xl-3 books"
                             style="padding: 0.8rem;">
                             <img src="{{ product.imagePath }}" alt="image">
                             <h4>{{product.name}}</h4>

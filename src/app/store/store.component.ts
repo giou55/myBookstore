@@ -70,7 +70,7 @@ export class StoreComponent {
     displayResults(results:string) {
         this.selectedCategory = null;
         this.selectedHome = false;
-        this.searchResults = results;
+        this.searchResults =  this.repository.getProducts().filter(x => x.name == results);
     }
 
 }
