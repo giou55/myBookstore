@@ -2,7 +2,13 @@
 
     <app-topbar (sendSearchText)="displayResults($event)"></app-topbar>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-maroon">
+    <app-navbar></app-navbar>
+
+    <app-home></app-home>
+
+    <app-footer></app-footer>
+
+    <!-- <nav class="navbar navbar-expand-md navbar-dark bg-maroon">
         <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -20,9 +26,9 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
 
-    <div *ngIf="searchResults != null">
+    <!-- <div *ngIf="searchResults != null">
         <div class="row">
             <div class="col-12">
                 <p>Βρέθηκαν {{ searchResults.length }} αποτελέσματα: </p>
@@ -44,9 +50,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div *ngIf="selectedHome == true">
+    <!-- <div *ngIf="selectedHome == true">
         <div class="row">
             <div class="col-12">
                 <img src="../../assets/home/bookstore.jpg" alt="" class="bookstore">
@@ -55,9 +61,9 @@
                     <img src="../../assets/home/bookstore2.jpg" alt="" class="bookstore">
                 </div>
         </div>
-    </div>
+    </div> -->
     
-    <div class="row" *ngIf="selectedCategory != null">
+    <!-- <div class="row" *ngIf="selectedCategory != null">
         <div class="col-12 col-md-9 col-lg-9 col-xl-9">
 
             <div class="row">
@@ -121,8 +127,6 @@
             </div>
         </div>
 
-    </div>
-
-    <app-footer></app-footer>
+    </div> -->
 
 </div>
